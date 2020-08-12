@@ -3,7 +3,7 @@ import datetime
 import time as sleepy
 import pandas as pd
 
-driver = webdriver.Chrome(executable_path='C:/Users/micha/Documents/Python/chromedriver')
+driver = webdriver.Chrome(executable_path='CHROME DRIVER LOCATION')
 time = datetime.datetime.today().time()
 
 initialInvestment = 1000
@@ -17,7 +17,7 @@ averagePrice = 10000
 closingTime = datetime.datetime.today().replace(hour=17,minute=0,second=0,microsecond=0).time()
 buying = True
 x = 0
-curTicker = "FUCK"
+curTicker = "AAPL"
 driver.get("https://finance.yahoo.com/")
 while time < closingTime:
     x += 1
